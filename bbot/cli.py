@@ -308,7 +308,7 @@ async def _main():
 
                         if not options.agent_mode and not options.yes:
                             log.hugesuccess(f"Scan ready. Press enter to execute {scanner.name}")
-                            input()
+                            continue
 
                         def handle_keyboard_input(keyboard_input):
                             kill_regex = re.compile(r"kill (?P<module>[a-z0-9_]+)")
