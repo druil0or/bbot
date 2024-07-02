@@ -307,8 +307,8 @@ async def _main():
                         from bbot.core.helpers.misc import smart_decode
 
                         if not options.agent_mode and not options.yes:
-                            log.hugesuccess(f"Scan ready. Press enter to execute {scanner.name}")
-                            continue
+                            log.hugesuccess(f"Scan ready. Starting scan {scanner.name}")
+                            
 
                         def handle_keyboard_input(keyboard_input):
                             kill_regex = re.compile(r"kill (?P<module>[a-z0-9_]+)")
